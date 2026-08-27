@@ -33,7 +33,7 @@
   <header>
     <div class="logo">Blink</div>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective Date: May 5, 2026 &nbsp;&middot;&nbsp; The Blink Team</p>
+    <p class="meta">Effective Date: August 26, 2026 &nbsp;&middot;&nbsp; The Blink Team</p>
   </header>
 
   <h2>Introduction</h2>
@@ -43,12 +43,13 @@
   <p>We collect information you provide directly to us when you create an account or use the App:</p>
   <ul>
     <li>Name (first and last)</li>
-    <li>Email address</li>
-    <li>Password (stored in hashed form &mdash; never in plain text)</li>
+    <li>Phone number when you choose phone authentication</li>
+    <li>Email address when you add one for account access or recovery</li>
+    <li>Authentication information supplied by Apple or Google when you choose those sign-in methods</li>
     <li>Personality quiz answers (collected during onboarding to personalize your recommendations)</li>
     <li>Interaction and preference data (your likes, dislikes, decisions, and ratings within the App)</li>
   </ul>
-  <p>We also collect usage data automatically as you use the App, including features you use and how you interact with the App.</p>
+  <p>We also collect usage data automatically as you use the App, including features you use and how you interact with the App. When you request an authentication code, Cloudflare Turnstile processes limited device and network signals as described below to help distinguish people from automated traffic.</p>
 
   <h2>How We Use Your Information</h2>
   <p>We use the information we collect to:</p>
@@ -64,12 +65,18 @@
   <p>We use the following third-party services to operate the App. Each has its own privacy policy:</p>
   <ul>
     <li><strong>Supabase</strong> &mdash; database and authentication infrastructure</li>
+    <li><strong>Cloudflare Turnstile</strong> &mdash; bot and abuse protection for authentication requests</li>
+    <li><strong>Twilio</strong> &mdash; delivery of SMS authentication codes when you use phone authentication</li>
     <li><strong>Apple Sign In</strong> &mdash; optional social authentication</li>
     <li><strong>Google Sign In</strong> &mdash; optional social authentication</li>
     <li><strong>Yelp</strong> &mdash; restaurant data and metadata</li>
     <li><strong>TMDB (The Movie Database)</strong> &mdash; movie data and metadata</li>
   </ul>
   <p>We share only the data necessary for these services to function. We do not sell your personal information to any third party.</p>
+
+  <h2>Bot and Abuse Protection</h2>
+  <p>We use Cloudflare Turnstile when authentication codes are requested to protect Blink and its users from bots, spam, fraud, and other abusive activity. Turnstile may process client-side signals such as your IP address, TLS fingerprint, user-agent header, the Turnstile site key, and the associated origin. Cloudflare states that it uses these signals to detect and block bots and to improve Turnstile&rsquo;s bot-detection capabilities, rather than to identify, profile, or target individuals.</p>
+  <p>Cloudflare processes these signals under its <a href="https://www.cloudflare.com/turnstile-privacy-policy/" target="_blank" rel="noopener noreferrer">Turnstile Privacy Addendum</a> and <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</p>
 
   <h2>Data Sharing</h2>
   <p>We do not sell, rent, or trade your personal information. We share your data only with the third-party services listed above as necessary to provide the App, or as required by law.</p>
